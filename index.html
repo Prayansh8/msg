@@ -10,6 +10,20 @@
     <link rel="apple-touch-icon" href="/logo192.png" />
     <link rel="manifest" href="/manifest.json" />
     <title>React App</title>
+    <link rel="preload" as="image" href="/gif1.gif" fetchpriority="high" />
+    <link rel="preload" as="image" href="/gif2.gif" />
+    <link rel="preload" as="image" href="/gif3.gif" />
+    <link rel="preload" as="image" href="/gif4.gif" />
+    <link rel="preload" as="image" href="/gif5.gif" />
+    <link rel="preload" as="image" href="/end.gif" fetchpriority="low" />
+    <script>
+        (function () {
+            ["/gif1.gif", "/gif2.gif", "/gif3.gif", "/gif4.gif", "/gif5.gif", "/end.gif"].forEach(function (src) {
+                var img = new Image();
+                img.src = src;
+            });
+        })();
+    </script>
     <script defer="defer" src="/static/js/main.4823beb7.js"></script>
     <link href="/static/css/main.f17d109f.css" rel="stylesheet">
 </head>
